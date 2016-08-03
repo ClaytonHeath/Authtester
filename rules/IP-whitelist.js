@@ -1,5 +1,5 @@
 function (user, context, callback) {
-    var whitelist = ['1.2.3.4', '2.3.4.5']; //authorized IPs
+    var whitelist = ['1.2.3.4', '2.3.4.5', '3.4.5.6']; //authorized IPs
     var userHasAccess = whitelist.some(
       function (ip) {
         return context.request.ip === ip;
